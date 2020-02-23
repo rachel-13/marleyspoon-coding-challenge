@@ -12,10 +12,9 @@ import Combine
 struct RecipeDetailView: View {
   let viewModel: RecipeDetailViewModel
   var body: some View {
-    
     VStack(alignment: .leading) {
       VStack(alignment: .center, spacing: 0) {
-        ImageView(withURL: viewModel.photoUrl, maxWidth: UIScreen.main.bounds.width, maxHeight: 300)
+        ImageView(withURL: viewModel.photoUrl, maxWidth: UIScreen.main.bounds.width, maxHeight: 350)
         
         Text(viewModel.title)
           .fontWeight(Font.Weight.semibold)
@@ -45,26 +44,26 @@ struct RecipeDetailView: View {
         
         if !viewModel.recipeTags.isEmpty {
           HStack(alignment: .lastTextBaseline, spacing: 0) {
-              Text("Tags: ")
-                .fontWeight(Font.Weight.regular)
-                .font(Font.system(size: 14))
-                .padding(.leading)
-              
-              ForEach(viewModel.recipeTags, id: \.self) { tagName in
-                Button(action: {
-                  // do nothing
-                }) {
-                  Text("\(tagName) ")
-                                   .fontWeight(Font.Weight.light)
-                                   .font(Font.system(size: 14))
-                }
+            Text("Tags: ")
+              .fontWeight(Font.Weight.regular)
+              .font(Font.system(size: 14))
+              .padding(.leading)
+            
+            ForEach(viewModel.recipeTags, id: \.self) { tagName in
+              Button(action: {
+                // do nothing
+              }) {
+                Text("\(tagName) ")
+                  .fontWeight(Font.Weight.light)
+                  .font(Font.system(size: 14))
               }
+            }
           }
         }
       }
       
       Spacer()
-    }.offset(x: 0, y: -50)
+    }.navigationBarTitle(Text("Recipe Detail"), displayMode: .inline)
   }
   
   init(recipeDetailViewModel: RecipeDetailViewModel) {
