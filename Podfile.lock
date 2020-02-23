@@ -1,0 +1,32 @@
+PODS:
+  - Contentful (5.0.7):
+    - Contentful/ImageOptions (= 5.0.7)
+  - Contentful/ImageOptions (5.0.7)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+
+DEPENDENCIES:
+  - Contentful
+  - RxCocoa
+  - RxSwift
+
+SPEC REPOS:
+  trunk:
+    - Contentful
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Contentful: a5f40f29f4869f6bdd17e668df0674cb8e4812c4
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+
+PODFILE CHECKSUM: 1d8a5f75350cc7f9eedb47bb6754ebea65b635e9
+
+COCOAPODS: 1.8.4

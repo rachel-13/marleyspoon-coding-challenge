@@ -3,18 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50C7D80DB031544AEDB8989B /* Pods_Marley_Spoon_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C15B98C752601D49ED6EBD /* Pods_Marley_Spoon_Coding_Challenge.framework */; };
+		56B626C041E3725260779CC4 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C1304420ED5E88508FCF55 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework */; };
 		960FC9992401751A00E97E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9982401751A00E97E54 /* AppDelegate.swift */; };
 		960FC99B2401751A00E97E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC99A2401751A00E97E54 /* SceneDelegate.swift */; };
-		960FC99D2401751A00E97E54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC99C2401751A00E97E54 /* ContentView.swift */; };
+		960FC99D2401751A00E97E54 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC99C2401751A00E97E54 /* RecipesView.swift */; };
 		960FC99F2401751C00E97E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960FC99E2401751C00E97E54 /* Assets.xcassets */; };
 		960FC9A22401751C00E97E54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960FC9A12401751C00E97E54 /* Preview Assets.xcassets */; };
 		960FC9A52401751C00E97E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960FC9A32401751C00E97E54 /* LaunchScreen.storyboard */; };
 		960FC9B02401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9AF2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift */; };
 		960FC9BB2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9BA2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeUITests.swift */; };
+		960FC9C924017ABC00E97E54 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9C824017ABC00E97E54 /* API.swift */; };
+		960FC9CC24018E3E00E97E54 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9CB24018E3E00E97E54 /* Recipe.swift */; };
+		960FC9CF2401934F00E97E54 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9CE2401934F00E97E54 /* RecipesViewModel.swift */; };
+		967983F22402617300CE47C2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967983F12402617300CE47C2 /* ImageLoader.swift */; };
+		B2A6835001AE2C7560B56B97 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B73E8ED1D362E3F84B886 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E2B73E8ED1D362E3F84B886 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14A81751DE1D42E5526A642D /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		25C1304420ED5E88508FCF55 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marley_Spoon_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C15B98C752601D49ED6EBD /* Pods_Marley_Spoon_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marley_Spoon_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A096DF7340BD29D39B93BEA /* Pods-Marley Spoon Coding ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding ChallengeTests/Pods-Marley Spoon Coding ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		960FC9952401751A00E97E54 /* Marley Spoon Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marley Spoon Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960FC9982401751A00E97E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960FC99A2401751A00E97E54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		960FC99C2401751A00E97E54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		960FC99C2401751A00E97E54 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
 		960FC99E2401751C00E97E54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		960FC9A12401751C00E97E54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		960FC9A42401751C00E97E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,14 @@
 		960FC9B62401751D00E97E54 /* Marley Spoon Coding ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marley Spoon Coding ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960FC9BA2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marley_Spoon_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
 		960FC9BC2401751D00E97E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960FC9C824017ABC00E97E54 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		960FC9CB24018E3E00E97E54 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		960FC9CE2401934F00E97E54 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		967983F12402617300CE47C2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9D2256723D6D7764C5ADFF53 /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A691E562CB44120B0FD5703E /* Pods-Marley Spoon Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding Challenge.release.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding Challenge/Pods-Marley Spoon Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		CF05D73C9379FCBA3BD05AFC /* Pods-Marley Spoon Coding Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding Challenge/Pods-Marley Spoon Coding Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		F17D19096EED36A0ADE159E9 /* Pods-Marley Spoon Coding ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding ChallengeTests/Pods-Marley Spoon Coding ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C7D80DB031544AEDB8989B /* Pods_Marley_Spoon_Coding_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56B626C041E3725260779CC4 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A6835001AE2C7560B56B97 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3448ACF91266943C579B72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C15B98C752601D49ED6EBD /* Pods_Marley_Spoon_Coding_Challenge.framework */,
+				0E2B73E8ED1D362E3F84B886 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework */,
+				25C1304420ED5E88508FCF55 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37E92469CF5690302848A8D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF05D73C9379FCBA3BD05AFC /* Pods-Marley Spoon Coding Challenge.debug.xcconfig */,
+				A691E562CB44120B0FD5703E /* Pods-Marley Spoon Coding Challenge.release.xcconfig */,
+				9D2256723D6D7764C5ADFF53 /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig */,
+				14A81751DE1D42E5526A642D /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.release.xcconfig */,
+				F17D19096EED36A0ADE159E9 /* Pods-Marley Spoon Coding ChallengeTests.debug.xcconfig */,
+				8A096DF7340BD29D39B93BEA /* Pods-Marley Spoon Coding ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		960FC98C2401751A00E97E54 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				960FC9AE2401751D00E97E54 /* Marley Spoon Coding ChallengeTests */,
 				960FC9B92401751D00E97E54 /* Marley Spoon Coding ChallengeUITests */,
 				960FC9962401751A00E97E54 /* Products */,
+				37E92469CF5690302848A8D8 /* Pods */,
+				1F3448ACF91266943C579B72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +147,12 @@
 		960FC9972401751A00E97E54 /* Marley Spoon Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				960FC9D22401A45F00E97E54 /* Model */,
+				960FC9D1240193C400E97E54 /* ViewModel */,
+				960FC9CD24018F5800E97E54 /* View */,
+				960FC9CA24018B3A00E97E54 /* Service */,
 				960FC9982401751A00E97E54 /* AppDelegate.swift */,
 				960FC99A2401751A00E97E54 /* SceneDelegate.swift */,
-				960FC99C2401751A00E97E54 /* ContentView.swift */,
 				960FC99E2401751C00E97E54 /* Assets.xcassets */,
 				960FC9A32401751C00E97E54 /* LaunchScreen.storyboard */,
 				960FC9A62401751C00E97E54 /* Info.plist */,
@@ -136,6 +187,39 @@
 			path = "Marley Spoon Coding ChallengeUITests";
 			sourceTree = "<group>";
 		};
+		960FC9CA24018B3A00E97E54 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				960FC9C824017ABC00E97E54 /* API.swift */,
+				967983F12402617300CE47C2 /* ImageLoader.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		960FC9CD24018F5800E97E54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				960FC99C2401751A00E97E54 /* RecipesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		960FC9D1240193C400E97E54 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				960FC9CE2401934F00E97E54 /* RecipesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		960FC9D22401A45F00E97E54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				960FC9CB24018E3E00E97E54 /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 960FC9BF2401751D00E97E54 /* Build configuration list for PBXNativeTarget "Marley Spoon Coding Challenge" */;
 			buildPhases = (
+				6B9DC01C73BBC5DC20BEE5C8 /* [CP] Check Pods Manifest.lock */,
 				960FC9912401751A00E97E54 /* Sources */,
 				960FC9922401751A00E97E54 /* Frameworks */,
 				960FC9932401751A00E97E54 /* Resources */,
+				D23B23CD49455169237BE985 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 960FC9C22401751D00E97E54 /* Build configuration list for PBXNativeTarget "Marley Spoon Coding ChallengeTests" */;
 			buildPhases = (
+				47251EE6D21D8688217D6869 /* [CP] Check Pods Manifest.lock */,
 				960FC9A72401751D00E97E54 /* Sources */,
 				960FC9A82401751D00E97E54 /* Frameworks */,
 				960FC9A92401751D00E97E54 /* Resources */,
@@ -178,9 +265,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 960FC9C52401751D00E97E54 /* Build configuration list for PBXNativeTarget "Marley Spoon Coding ChallengeUITests" */;
 			buildPhases = (
+				4663D5DF1B4594DFDE3616E7 /* [CP] Check Pods Manifest.lock */,
 				960FC9B22401751D00E97E54 /* Sources */,
 				960FC9B32401751D00E97E54 /* Frameworks */,
 				960FC9B42401751D00E97E54 /* Resources */,
+				E9D5947067DBFCC31D2F3D74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,14 +351,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4663D5DF1B4594DFDE3616E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47251EE6D21D8688217D6869 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marley Spoon Coding ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B9DC01C73BBC5DC20BEE5C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marley Spoon Coding Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D23B23CD49455169237BE985 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marley Spoon Coding Challenge/Pods-Marley Spoon Coding Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marley Spoon Coding Challenge/Pods-Marley Spoon Coding Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marley Spoon Coding Challenge/Pods-Marley Spoon Coding Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9D5947067DBFCC31D2F3D74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		960FC9912401751A00E97E54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967983F22402617300CE47C2 /* ImageLoader.swift in Sources */,
 				960FC9992401751A00E97E54 /* AppDelegate.swift in Sources */,
 				960FC99B2401751A00E97E54 /* SceneDelegate.swift in Sources */,
-				960FC99D2401751A00E97E54 /* ContentView.swift in Sources */,
+				960FC9C924017ABC00E97E54 /* API.swift in Sources */,
+				960FC99D2401751A00E97E54 /* RecipesView.swift in Sources */,
+				960FC9CF2401934F00E97E54 /* RecipesViewModel.swift in Sources */,
+				960FC9CC24018E3E00E97E54 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +628,7 @@
 		};
 		960FC9C02401751D00E97E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF05D73C9379FCBA3BD05AFC /* Pods-Marley Spoon Coding Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +648,7 @@
 		};
 		960FC9C12401751D00E97E54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A691E562CB44120B0FD5703E /* Pods-Marley Spoon Coding Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,8 +668,9 @@
 		};
 		960FC9C32401751D00E97E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F17D19096EED36A0ADE159E9 /* Pods-Marley Spoon Coding ChallengeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Marley Spoon Coding ChallengeTests/Info.plist";
@@ -491,8 +690,9 @@
 		};
 		960FC9C42401751D00E97E54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A096DF7340BD29D39B93BEA /* Pods-Marley Spoon Coding ChallengeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Marley Spoon Coding ChallengeTests/Info.plist";
@@ -512,8 +712,9 @@
 		};
 		960FC9C62401751D00E97E54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2256723D6D7764C5ADFF53 /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Marley Spoon Coding ChallengeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -531,8 +732,9 @@
 		};
 		960FC9C72401751D00E97E54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A81751DE1D42E5526A642D /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Marley Spoon Coding ChallengeUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
