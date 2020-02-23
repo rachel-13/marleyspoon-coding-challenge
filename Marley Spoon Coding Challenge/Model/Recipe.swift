@@ -37,7 +37,7 @@ public final class Chef: EntryDecodable, FieldKeysQueryable {
 }
 
 public final class Tag: EntryDecodable, FieldKeysQueryable {
-  
+
   public static let contentTypeId: String = "tag"
   
   public let id: String

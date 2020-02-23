@@ -20,6 +20,10 @@
 		960FC9C924017ABC00E97E54 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9C824017ABC00E97E54 /* API.swift */; };
 		960FC9CC24018E3E00E97E54 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9CB24018E3E00E97E54 /* Recipe.swift */; };
 		960FC9CF2401934F00E97E54 /* RecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9CE2401934F00E97E54 /* RecipesViewModel.swift */; };
+		965A9860240271F200BC73E6 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A985F240271F200BC73E6 /* ImageView.swift */; };
+		965A98622402721300BC73E6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A98612402721300BC73E6 /* CardView.swift */; };
+		965A9864240279A400BC73E6 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A9863240279A400BC73E6 /* RecipeDetailView.swift */; };
+		965A986624027A4300BC73E6 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A986524027A4300BC73E6 /* RecipeDetailViewModel.swift */; };
 		967983F22402617300CE47C2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967983F12402617300CE47C2 /* ImageLoader.swift */; };
 		B2A6835001AE2C7560B56B97 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E2B73E8ED1D362E3F84B886 /* Pods_Marley_Spoon_Coding_Challenge_Marley_Spoon_Coding_ChallengeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +68,10 @@
 		960FC9C824017ABC00E97E54 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		960FC9CB24018E3E00E97E54 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		960FC9CE2401934F00E97E54 /* RecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewModel.swift; sourceTree = "<group>"; };
+		965A985F240271F200BC73E6 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		965A98612402721300BC73E6 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		965A9863240279A400BC73E6 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		965A986524027A4300BC73E6 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
 		967983F12402617300CE47C2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		9D2256723D6D7764C5ADFF53 /* Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests/Pods-Marley Spoon Coding Challenge-Marley Spoon Coding ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A691E562CB44120B0FD5703E /* Pods-Marley Spoon Coding Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding Challenge.release.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding Challenge/Pods-Marley Spoon Coding Challenge.release.xcconfig"; sourceTree = "<group>"; };
@@ -199,7 +207,10 @@
 		960FC9CD24018F5800E97E54 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				965A9863240279A400BC73E6 /* RecipeDetailView.swift */,
 				960FC99C2401751A00E97E54 /* RecipesView.swift */,
+				965A985F240271F200BC73E6 /* ImageView.swift */,
+				965A98612402721300BC73E6 /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				960FC9CE2401934F00E97E54 /* RecipesViewModel.swift */,
+				965A986524027A4300BC73E6 /* RecipeDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -459,6 +471,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965A9860240271F200BC73E6 /* ImageView.swift in Sources */,
+				965A9864240279A400BC73E6 /* RecipeDetailView.swift in Sources */,
+				965A986624027A4300BC73E6 /* RecipeDetailViewModel.swift in Sources */,
+				965A98622402721300BC73E6 /* CardView.swift in Sources */,
 				967983F22402617300CE47C2 /* ImageLoader.swift in Sources */,
 				960FC9992401751A00E97E54 /* AppDelegate.swift in Sources */,
 				960FC99B2401751A00E97E54 /* SceneDelegate.swift in Sources */,
