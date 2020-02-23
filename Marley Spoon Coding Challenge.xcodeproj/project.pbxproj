@@ -15,7 +15,7 @@
 		960FC99F2401751C00E97E54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960FC99E2401751C00E97E54 /* Assets.xcassets */; };
 		960FC9A22401751C00E97E54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960FC9A12401751C00E97E54 /* Preview Assets.xcassets */; };
 		960FC9A52401751C00E97E54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960FC9A32401751C00E97E54 /* LaunchScreen.storyboard */; };
-		960FC9B02401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9AF2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift */; };
+		960FC9B02401751D00E97E54 /* RecipeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9AF2401751D00E97E54 /* RecipeViewModelTests.swift */; };
 		960FC9BB2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9BA2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeUITests.swift */; };
 		960FC9C924017ABC00E97E54 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9C824017ABC00E97E54 /* API.swift */; };
 		960FC9CC24018E3E00E97E54 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9CB24018E3E00E97E54 /* Recipe.swift */; };
@@ -63,7 +63,7 @@
 		960FC9A42401751C00E97E54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		960FC9A62401751C00E97E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960FC9AB2401751D00E97E54 /* Marley Spoon Coding ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marley Spoon Coding ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		960FC9AF2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marley_Spoon_Coding_ChallengeTests.swift; sourceTree = "<group>"; };
+		960FC9AF2401751D00E97E54 /* RecipeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModelTests.swift; sourceTree = "<group>"; };
 		960FC9B12401751D00E97E54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		960FC9B62401751D00E97E54 /* Marley Spoon Coding ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Marley Spoon Coding ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960FC9BA2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marley_Spoon_Coding_ChallengeUITests.swift; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 		960FC9AE2401751D00E97E54 /* Marley Spoon Coding ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				960FC9AF2401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift */,
+				960FC9AF2401751D00E97E54 /* RecipeViewModelTests.swift */,
 				960FC9B12401751D00E97E54 /* Info.plist */,
 				965A98672402E1A200BC73E6 /* APIMock.swift */,
 			);
@@ -501,7 +501,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				965A98682402E1A200BC73E6 /* APIMock.swift in Sources */,
-				960FC9B02401751D00E97E54 /* Marley_Spoon_Coding_ChallengeTests.swift in Sources */,
+				960FC9B02401751D00E97E54 /* RecipeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

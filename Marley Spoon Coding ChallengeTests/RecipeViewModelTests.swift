@@ -1,5 +1,5 @@
 //
-//  Marley_Spoon_Coding_ChallengeTests.swift
+//  RecipeViewModelTests.swift
 //  Marley Spoon Coding ChallengeTests
 //
 //  Created by pohyee on 22/02/2020.
