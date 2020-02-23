@@ -1,0 +1,24 @@
+{
+    "title": "Recipe Title",
+    "description": "Recipe Description",
+    "photo": {
+        "urlString": "https://www.google.com"
+    },
+    "chef": {
+        "name": "Random Chef Name"
+    },
+    "calories": 248,
+    "tags": [{
+            "name": "vegan"
+        },
+        {
+            "name": "chinese"
+        },
+        {
+            "name": "western"
+        },
+        {
+            "name": "meat"
+        }
+    ]
+}
