@@ -11,13 +11,13 @@ import RxSwift
 import RxCocoa
 
 public protocol APIProtocol {
-  var result: BehaviorRelay<[Recipe]> { get }
+  var result: BehaviorRelay<Result<[Recipe]>> { get }
   func fetchRecipesFromContentful()
 }
 
 public struct API: APIProtocol {
-  
-  public var result = BehaviorRelay<[Recipe]>(value: [])
+
+  public var result = BehaviorRelay<Result<[Recipe]>>(value: .success([]))
   private let client: Client
   
   public init() {
@@ -32,9 +32,9 @@ public struct API: APIProtocol {
       switch result {
       case .success(let arrayResponse):
         let recipes = arrayResponse.items
-        self.result.accept(recipes)
+        self.result.accept(.success(recipes))
       case .error(let error):
-        print(error)
+        self.result.accept(.error(error))
       }
     }
   }

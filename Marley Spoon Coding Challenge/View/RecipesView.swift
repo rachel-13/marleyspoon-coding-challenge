@@ -14,15 +14,18 @@ struct RecipesView: View {
   
   var body: some View {
     NavigationView {
-      List(viewModel.recipes) { recipe in
-        ZStack {
-          CardView(recipe: recipe)
-          NavigationLink(destination: self.getRecipeDetailView(tappedRecipe: recipe)) {
-            EmptyView()
-          }.buttonStyle(PlainButtonStyle())
+      if viewModel.errorString.isEmpty {
+        List(viewModel.recipes) { recipe in
+          ZStack {
+            CardView(recipe: recipe)
+            NavigationLink(destination: self.getRecipeDetailView(tappedRecipe: recipe)) {
+              EmptyView()
+            }.buttonStyle(PlainButtonStyle())
+          }.navigationBarTitle("Recipes")
         }
+      } else {
+        Text(viewModel.errorString)
       }
-      .navigationBarTitle("Recipes")
     }
     .onAppear {
       self.viewModel.fetchRecipes()
@@ -40,3 +43,4 @@ struct RecipesView: View {
     return recipeDetailView
   }
 }
+

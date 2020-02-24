@@ -12,13 +12,19 @@ public class RecipesViewModel: ObservableObject {
   
   private let disposeBag = DisposeBag()
   private let api: APIProtocol
-  
+
+  @Published var errorString: String = ""
   @Published var recipes: [Recipe] = []
   
   public init(api: APIProtocol = API()) {
     self.api = api
-    api.result.asDriver().asObservable().subscribe(onNext: { [weak self] apiRecipes in
-      self?.recipes = apiRecipes
+    api.result.asDriver().asObservable().subscribe(onNext: { [weak self] result in
+      switch result {
+      case .success(let recipes):
+        self?.recipes = recipes
+      case .error(let error):
+        self?.errorString = error.localizedDescription
+      }
     }).disposed(by: disposeBag)
   }
   
