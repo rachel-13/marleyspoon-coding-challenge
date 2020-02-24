@@ -11,7 +11,7 @@ How to run
 - Clone the project
 - Run `pod update repo` if Contentful podspec is not available on your repo.
 - Run `pod install`
-- Open `.workspace` 
+- Open `.workspace` in root directory
 
 Tech Stack 
 
