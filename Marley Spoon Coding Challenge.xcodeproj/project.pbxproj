@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		50C7D80DB031544AEDB8989B /* Pods_Marley_Spoon_Coding_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C15B98C752601D49ED6EBD /* Pods_Marley_Spoon_Coding_Challenge.framework */; };
 		56B626C041E3725260779CC4 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C1304420ED5E88508FCF55 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework */; };
+		940DC3EE240391D80008C0A6 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DC3ED240391D80008C0A6 /* Tag.swift */; };
 		960FC9992401751A00E97E54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC9982401751A00E97E54 /* AppDelegate.swift */; };
 		960FC99B2401751A00E97E54 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC99A2401751A00E97E54 /* SceneDelegate.swift */; };
 		960FC99D2401751A00E97E54 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960FC99C2401751A00E97E54 /* RecipesView.swift */; };
@@ -26,7 +27,6 @@
 		965A986624027A4300BC73E6 /* RecipeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A986524027A4300BC73E6 /* RecipeDetailViewModel.swift */; };
 		965A98682402E1A200BC73E6 /* APIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A98672402E1A200BC73E6 /* APIMock.swift */; };
 		965A986C2402EA3A00BC73E6 /* Chef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A986B2402EA3A00BC73E6 /* Chef.swift */; };
-		965A986E2402EA4500BC73E6 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965A986D2402EA4500BC73E6 /* Tag.swift */; };
 		965A98722402FC3300BC73E6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 965A98712402FC3200BC73E6 /* data.json */; };
 		965A98742402FEC600BC73E6 /* data-short.json in Resources */ = {isa = PBXBuildFile; fileRef = 965A98732402FEC600BC73E6 /* data-short.json */; };
 		967983F22402617300CE47C2 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967983F12402617300CE47C2 /* ImageLoader.swift */; };
@@ -56,6 +56,7 @@
 		25C1304420ED5E88508FCF55 /* Pods_Marley_Spoon_Coding_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marley_Spoon_Coding_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40C15B98C752601D49ED6EBD /* Pods_Marley_Spoon_Coding_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marley_Spoon_Coding_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A096DF7340BD29D39B93BEA /* Pods-Marley Spoon Coding ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marley Spoon Coding ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-Marley Spoon Coding ChallengeTests/Pods-Marley Spoon Coding ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		940DC3ED240391D80008C0A6 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		960FC9952401751A00E97E54 /* Marley Spoon Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marley Spoon Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960FC9982401751A00E97E54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		960FC99A2401751A00E97E54 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		965A986524027A4300BC73E6 /* RecipeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewModel.swift; sourceTree = "<group>"; };
 		965A98672402E1A200BC73E6 /* APIMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };
 		965A986B2402EA3A00BC73E6 /* Chef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chef.swift; sourceTree = "<group>"; };
-		965A986D2402EA4500BC73E6 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = "/Users/pohz/Documents/interviews/marleyspoon/Marley Spoon Coding Challenge/Marley Spoon Coding Challenge/Model/Tag.swift"; sourceTree = "<absolute>"; };
 		965A98712402FC3200BC73E6 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		965A98732402FEC600BC73E6 /* data-short.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "data-short.json"; sourceTree = "<group>"; };
 		967983F12402617300CE47C2 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
@@ -240,7 +240,7 @@
 		960FC9D22401A45F00E97E54 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				965A986D2402EA4500BC73E6 /* Tag.swift */,
+				940DC3ED240391D80008C0A6 /* Tag.swift */,
 				960FC9CB24018E3E00E97E54 /* Recipe.swift */,
 				965A986B2402EA3A00BC73E6 /* Chef.swift */,
 			);
@@ -500,7 +500,7 @@
 				960FC99D2401751A00E97E54 /* RecipesView.swift in Sources */,
 				960FC9CF2401934F00E97E54 /* RecipesViewModel.swift in Sources */,
 				960FC9CC24018E3E00E97E54 /* Recipe.swift in Sources */,
-				965A986E2402EA4500BC73E6 /* Tag.swift in Sources */,
+				940DC3EE240391D80008C0A6 /* Tag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
