@@ -18,6 +18,15 @@ public final class Chef: EntryDecodable, FieldKeysQueryable {
   public let createdAt: Date?
   
   public let name: String?
+
+  // for creating test objects
+  public init(name: String) {
+    self.name = name
+    self.id = ""
+    self.localeCode = "en-US"
+    self.createdAt = Date()
+    self.updatedAt = Date()
+  }
   
   public required init(from decoder: Decoder) throws {
     let sys = try decoder.sys()

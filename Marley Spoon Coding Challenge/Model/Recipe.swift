@@ -25,6 +25,22 @@ public final class Recipe: EntryDecodable, FieldKeysQueryable, Identifiable {
   public var chef: Chef?
   public var photo: Asset?
   public var tags: [Tag]?
+
+  // for creating test objects
+  public init(title: String, description: String, calories: Int, chef: Chef, tags: [Tag]) {
+    self.title = title
+    self.description = description
+    self.calories = calories
+    self.chef = chef
+    self.tags = tags
+    
+    self.id = ""
+    self.localeCode = "en-US"
+    self.createdAt = Date()
+    self.updatedAt = Date()
+  }
+
+
   
   public required init(from decoder: Decoder) throws {
     let sys = try decoder.sys()
